@@ -2,7 +2,7 @@
   .selector-for-some-widget {
     box-sizing: content-box;
   }
-.container-fluid,body{
+.container-fluid,body,.row{
   padding: 0px;
   margin: 0px;
   box-sizing: content-box;
@@ -49,13 +49,26 @@ header span{
     transition: 1000ms ease-in-out;
   }
 }
-.galleryimg{
+ .galleryimg{
   box-shadow: 35px 31px 68px -5px rgba(0,0,0,0.27);
-  opacity: 0.5;
   
+  
+  transition: 300ms ease-in-out;
+ 
+  
+}
+.animateimg{
+  transform: translateY(0px) !important;
+  transition: 500ms ease-in-out ;
+  opacity: 1 !important;
+}
+.animateimages{
+  transform: translateY(200px) !important;
+  transition: 500ms ease-in-out ;
+  opacity: 0 !important;
 }
 .galleryimg:hover{
   box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 
-}
+} 

@@ -19,9 +19,11 @@ $(function(){
 
       if(win >= sec1 ){
         $(".navbar").addClass("animateBar");
+        $(".animateimg").removeClass("animateimages");
       }
       else{
         $(".navbar").removeClass("animateBar");
+        $(".animateimg").addClass("animateimages");
       }
       
       
