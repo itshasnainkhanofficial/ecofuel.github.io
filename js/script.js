@@ -1,6 +1,7 @@
 
-
+new WOW().init();
 $(function(){
+  
    var scrollLink = $('.scrolltab');
   scrollLink.click(function(e) {
     e.preventDefault();
@@ -19,11 +20,11 @@ $(function(){
 
       if(win >= sec1 ){
         $(".navbar").addClass("animateBar");
-        $(".animateimg").removeClass("animateimages");
+       // $(".animateimg").removeClass("animateimages");
       }
       else{
         $(".navbar").removeClass("animateBar");
-        $(".animateimg").addClass("animateimages");
+        //$(".animateimg").addClass("animateimages");
       }
       
       
