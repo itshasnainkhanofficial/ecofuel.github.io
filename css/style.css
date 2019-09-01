@@ -8,7 +8,13 @@
   box-sizing: content-box;
   
 }
-
+.navbar a{
+  font-size: 1.3rem !important;
+}
+.navbar a:hover{
+  transition: 200ms ease-in-out;
+  color: #0062cc !important;
+}
 header{
   width: 100%;
   height: 100vh;
@@ -43,6 +49,27 @@ header span{
 
   transition: 1000ms ease-in-out;
 }
+#backtotop{
+  cursor: pointer;
+  user-select: none;
+  
+  transition: 300ms ease-in-out;
+}
+.hideunhide{
+  
+  transition: 300ms ease-in-out;
+  color:white !important;
+  background: white !important;
+
+}
+#backtotop:hover{
+  background: white !important;
+  color:skyblue !important;
+  transition: 200ms ease-in-out;
+  border : 1px solid skyblue !important;
+
+}
+
 @media (max-width: 991.98px){
   .navbar{
     background: white !important;

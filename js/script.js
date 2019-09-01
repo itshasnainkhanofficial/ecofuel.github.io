@@ -13,7 +13,12 @@ $(function(){
 
 
   $(window).scroll(function(){
-
+      if($(this).scrollTop() > 300){
+        $("#backtotop").removeClass("hideunhide");  
+      }
+      else{
+        $("#backtotop").addClass("hideunhide");  
+      }
     
       var sec1 = $("#sec_1").offset().top;
       var win = $(window).scrollTop();
@@ -39,8 +44,15 @@ $(function(){
         $(this).parent().siblings().removeClass('active');
         
       }
-    })
+    });
+    
   })
+      $("#backtotop").click(function(){
+        $('body,html').animate({
+          scrollTop: 0
+        }, 1000 );
+      });
+
 
   
 });
