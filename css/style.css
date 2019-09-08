@@ -263,7 +263,7 @@ height: 100%;
   font-size: 15px;
 }
 
-.active, .collapsible:hover {
+#faq .active, .collapsible:hover {
   background-color: #555;
 }
 
@@ -282,6 +282,6 @@ height: 100%;
   margin-left: 5px;
 }
 
-.active:after {
+#faq .active:after {
   content: "\2190"; /* Unicode character for "minus" sign (-) */
 }
