@@ -56,7 +56,9 @@ $(function(){
       // collapse
       var coll = document.getElementsByClassName("collapsible");
       var i;
-      
+      coll[0].classList.add("active");
+      coll[0].nextElementSibling.style.maxHeight ="64px";
+
       for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
           this.classList.toggle("active");
