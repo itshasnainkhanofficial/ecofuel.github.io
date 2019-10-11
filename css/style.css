@@ -285,3 +285,7 @@ height: 100%;
 #faq .active:after {
   content: "\2190"; /* Unicode character for "minus" sign (-) */
 }
+.logo_img{
+  width:10vw;
+  
+}
